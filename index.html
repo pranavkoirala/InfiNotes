@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InfiNotes - Endless Canvas</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
+    <header>
+      <h1>InfiNotes</h1>
+      <div id="tools">
+        <button id="clear">Clear</button>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="save">Save</button>
+        <button id="load">Load</button>
+        <label for="stroke">Stroke:</label>
+        <select id="stroke">
+          <option value="1">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+    </header>
     <div id="canvas-container">
+      <canvas></canvas>
       <!-- The infin canvas will be made here -->
     </div>
   </body>
